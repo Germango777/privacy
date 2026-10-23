@@ -51,37 +51,13 @@
     through your device's app settings by clearing the Game's storage, or by uninstalling the Game.</p>
 
     <h2>3. Advertising, analytics and third-party services</h2>
-    <p><strong>Google AdMob test banners.</strong> The integration uses the Google Mobile Ads SDK
-    with Google's official Android demo app ID
-    <code>ca-app-pub-3940256099942544~3347511713</code> and demo banner ad unit ID
-    <code>ca-app-pub-3940256099942544/6300978111</code>, rather than production advertising IDs.
-    Test ads are for integration testing; they do not make the SDK offline or data-free.
-    Google and its service providers may process information through the advertising and consent
-    SDKs. The information processed depends on SDK configuration, the advertisements served,
-    your region, device settings and applicable consent choices.</p>
-    <p>This information may include:</p>
-    <ul>
-      <li>Advertising identifiers and other device or app-instance identifiers.</li>
-      <li>IP address and approximate location inferred from the IP address, not GPS location requested by the Game.</li>
-      <li>Device and app information, such as device model, operating system version and app version.</li>
-      <li>Ad impressions, clicks, video views and other interactions with advertisements.</li>
-      <li>Diagnostic and performance information, including SDK crash and error data.</li>
-    </ul>
-    <p>These data may be used to deliver and personalize advertisements where permitted, measure
-    advertising performance, prevent fraud, maintain security and improve advertising services.
-    Non-personalized or limited ads may still involve processing certain information for ad delivery,
-    measurement or fraud prevention; they do not necessarily mean that no data is collected.</p>
-    <p><strong>Consent and privacy options.</strong> The integration uses Google UMP to update
-    consent information and show a consent form when required. Mobile Ads initialization and
-    banner loading are gated on UMP indicating that ads may be requested; they do not proceed
-    while that gate is closed. UMP may itself contact Google to determine consent requirements
-    and process consent choices. A native <strong>Ad privacy</strong> button is provided when
-    UMP reports that a privacy-options entry point is required, allowing you to reopen the
-    applicable form and review or change your choices.</p>
-    <p>Your choices may affect which ads can be shown. Android's privacy and advertising settings may
-    also allow you to reset or delete your advertising ID or manage ad personalization; available
-    options vary by Android version. Changing these settings does not necessarily stop all
-    advertising-related processing.</p>
+   <p>The Application uses <strong>Google AdMob</strong> to serve advertisements. AdMob, as a third party, may collect and process data including:</p>
+<ul>
+  <li>Device advertising ID (for serving relevant ads)</li>
+  <li>Device type and operating system version</li>
+  <li>General location (non-precise, for geo-targeted ads)</li>
+  <li>Usage data (app interactions, session duration)</li>
+</ul> 
     <p>Google and its partners may process advertising information on servers outside your country.
     Their handling, retention and deletion of that information are described in their applicable
     policies. For more information, see:</p>
@@ -90,16 +66,7 @@
       <li><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>.</li>
       <li><a href="https://support.google.com/admob/answer/6128543">Google AdMob privacy and advertising information</a>.</li>
     </ul>
-    <p>The Game does not include a separate analytics SDK, social sign-in, in-app purchases or an
-    integrated cloud-save service. Advertising and consent SDK processing described above is
-    separate from locally stored game preferences and may include diagnostics and ad measurement.</p>
-    <p>The Game is built with the Godot Engine. No developer-operated server is needed to play,
-    and the developer does not receive local game settings or session statistics through a
-    separate telemetry service.</p>
-    <p>Google Play and Android may independently process information related to downloading,
-    installing, updating or diagnosing apps according to their own settings and policies.
-    This platform processing is separate from the Game's own functionality. For details, see
-    <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+   
 
     <h2>4. Device permissions</h2>
     <p>The test advertising integration declares these Android permissions:</p>
